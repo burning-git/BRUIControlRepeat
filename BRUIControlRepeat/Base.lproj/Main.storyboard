@@ -18,9 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-Fl-Fkr">
-                                <rect key="frame" x="133" y="259" width="54" height="34"/>
+                                <rect key="frame" x="133" y="254" width="73" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="98e-sa-Yv7"/>
+                                    <constraint firstAttribute="width" constant="73" id="NCc-tN-3kr"/>
+                                </constraints>
                                 <state key="normal" title="点击我">
-                                    <color key="titleColor" red="0.95686274510000002" green="0.60392156860000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.95294117649999999" green="0.0" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPR-j2-gVu"/>
@@ -29,8 +33,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gVQ-Fl-Fkr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="195" id="Gpg-c9-Npk"/>
-                            <constraint firstItem="gVQ-Fl-Fkr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f1d-UJ-jxu"/>
+                            <constraint firstItem="gVQ-Fl-Fkr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="190" id="Gpg-c9-Npk"/>
+                            <constraint firstItem="gVQ-Fl-Fkr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9.5" id="f1d-UJ-jxu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kPj-3P-hs0"/>
@@ -40,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="315"/>
+            <point key="canvasLocation" x="379" y="376"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pgx-8i-TgB">
@@ -58,7 +62,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dbo-sX-nc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="392"/>
+            <point key="canvasLocation" x="57" y="369"/>
         </scene>
     </scenes>
 </document>

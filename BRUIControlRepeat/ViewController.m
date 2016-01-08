@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"Burning_git";
     self.button.br_controllAcceptEventInterval = 10;
     BRRepeatWeak(ws);
 //    self.button.unSelectedBlock=^(){
