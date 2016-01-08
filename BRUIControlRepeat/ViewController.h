@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  BRUIControlRepeat
+//  RepeatSeletdButtonObject_C
 //
-//  Created by gitBurning on 16/1/8.
-//  Copyright © 2016年 BR. All rights reserved.
+//  Created by gitBurning on 15/9/26.
+//  Copyright © 2015年 BR. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
