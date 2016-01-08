@@ -15,6 +15,7 @@
 		665CE2BF1C3F61230093DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665CE2BD1C3F61230093DDAC /* LaunchScreen.storyboard */; };
 		665CE2C91C3F61650093DDAC /* UIControl+Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 665CE2C81C3F61650093DDAC /* UIControl+Repeat.m */; };
 		665CE2CC1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 665CE2CB1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m */; };
+		665CE2CF1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 665CE2CE1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		665CE2C81C3F61650093DDAC /* UIControl+Repeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Repeat.m"; sourceTree = "<group>"; };
 		665CE2CA1C3F61D70093DDAC /* UIBarButtonItem+Repeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Repeat.h"; sourceTree = "<group>"; };
 		665CE2CB1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Repeat.m"; sourceTree = "<group>"; };
+		665CE2CE1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedBack矢量智能对象@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		665CE2AE1C3F61230093DDAC /* BRUIControlRepeat */ = {
 			isa = PBXGroup;
 			children = (
+				665CE2CE1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png */,
 				665CE2C61C3F61650093DDAC /* Catory */,
 				665CE2B21C3F61230093DDAC /* AppDelegate.h */,
 				665CE2B31C3F61230093DDAC /* AppDelegate.m */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				665CE2BF1C3F61230093DDAC /* LaunchScreen.storyboard in Resources */,
+				665CE2CF1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png in Resources */,
 				665CE2BC1C3F61230093DDAC /* Assets.xcassets in Resources */,
 				665CE2BA1C3F61230093DDAC /* Main.storyboard in Resources */,
 			);
@@ -318,6 +322,7 @@
 				665CE2C51C3F61230093DDAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

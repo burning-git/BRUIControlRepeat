@@ -42,12 +42,29 @@
     }];
     
     
-    UIBarButtonItem * bar = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStyleDone target:self action:@selector(sleedsjasdakdjad:)];
+    UIBarButtonItem * bar = [[UIBarButtonItem alloc] initWithCustomView:[self addRightItemWithImage:@"feedBack矢量智能对象" action:@selector(sleedsjasdakdjad:)]];
     self.navigationItem.rightBarButtonItem = bar;
     bar.br_barItemAcceptEventInterval = 5;
+    
+    
     //[bar setValue:@(5) forKey:@"br_controllAcceptEventInterval"];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (UIButton *)addRightItemWithImage:(NSString *)imageName action:(SEL)action {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *image = [UIImage imageNamed:imageName];
+    button.frame = CGRectMake(10, 0, 30, 30);
+    
+    // 这里需要注意：由于是想让图片右移，所以left需要设置为正，right需要设置为负。正在是相反的。
+    // 让按钮图片右移15
+    button.imageEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
+    [button setImage:image forState:UIControlStateNormal];
+    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+
+    return button;
+}
+
 -(void)sleedsjasdakdjad:(UIBarButtonItem*)bar
 {
     NSLog(@"dasjdlasdjasld");
