@@ -7,7 +7,7 @@
 //
 
 #import "UIBarButtonItem+Repeat.h"
-#import "UIControl+Repeat.h"
+#import "UIControl+BR_Repeat.h"
 #import <objc/runtime.h>
 static const char *BarItem_acceptEventInterval = "bar_acceptEventInterval";
 
@@ -67,6 +67,7 @@ static const char *BarItem_unSelectedStatus = "br_ItemSetDefaultSelectedBlock";
 -(UIButton*)getButton
 {
     UIButton * sender = [[self target] valueForKey:@"button"]; //获取 按钮
+    sender = nil;
     return sender;
 }
 #pragma mark - 外部api

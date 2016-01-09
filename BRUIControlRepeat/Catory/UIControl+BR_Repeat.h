@@ -12,7 +12,7 @@
 typedef void(^br_SetSelectedBlock)(id sender);
 typedef void(^br_SetDefaultSelectedBlock)(id sender);
 
-@interface UIControl (Repeat)
+@interface UIControl (BR_Repeat)
 @property (nonatomic, assign) NSTimeInterval br_controllAcceptEventInterval;   // 可以用这个给重复点击加间隔
 
 /**
@@ -33,4 +33,7 @@ typedef void(^br_SetDefaultSelectedBlock)(id sender);
  */
 -(void)addSelectedBlcokStatus:(br_SetSelectedBlock)selectedBlcok unSelectedBlock:(br_SetDefaultSelectedBlock)unSelectedBlock;
 
+
+
++(void)setDefualtInterval:(NSTimeInterval)interval;
 @end
