@@ -20,7 +20,7 @@ static const char *UIControl_unSelectedStatus = "UIControl_unSelectedStatus";
 @property (assign,nonatomic) BOOL br_hadSelectedButton;
 
 @end
-@implementation UIControl (Repeat)
+@implementation UIControl (BR_Repeat)
 
 + (void)load
 {
