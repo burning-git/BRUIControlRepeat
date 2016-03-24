@@ -10,7 +10,6 @@
 #import "UIBarButtonItem+Repeat.h"
 //#import "UIButton+BRRepeat.h"
 #import "UIControl+BR_Repeat.h"
-#warning ps UIBarButtonItem+Repeat 目前无作用，请使用 UIControl ！ 作者继续研究中...
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *button;
