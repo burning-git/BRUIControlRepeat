@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BRRepeatDefine.h"
 
 @interface UIBarButtonItem (Repeat)
 typedef void(^br_ItemSetSelectedBlock)(id info);

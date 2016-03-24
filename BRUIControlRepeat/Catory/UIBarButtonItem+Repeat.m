@@ -7,8 +7,11 @@
 //
 
 #import "UIBarButtonItem+Repeat.h"
-#import "UIControl+BR_Repeat.h"
+#import "BRRepeatDefine.h"
+
+
 #import <objc/runtime.h>
+
 static const char *BarItem_acceptEventInterval = "bar_acceptEventInterval";
 
 static const char *BarItem_selectedStatus = "br_ItemSetSelectedBlock";
@@ -27,12 +30,43 @@ static const char *BarItem_unSelectedStatus = "br_ItemSetDefaultSelectedBlock";
 
     if (br_barItemAcceptEventInterval>0) {
         
-        UIButton * sender = [self getButton];
-        sender.br_controllAcceptEventInterval = br_barItemAcceptEventInterval;
-    }
+        if (self.customView) {
+            
+            id sender = [self getButton];
 
+            if ([sender isKindOfClass:[UIButton class]]) {
+                UIButton *tempSender = sender;
+                tempSender.br_controllAcceptEventInterval = br_barItemAcceptEventInterval;
+                
+            }
+            else if ([sender isKindOfClass:[UIView class]]){
+                
+                UIView *tempView = sender;
+
+                [tempView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                    if ([obj isKindOfClass:[UIButton class]]) {
+                        UIButton *tempSender = (id)obj;
+                        tempSender.br_controllAcceptEventInterval = br_barItemAcceptEventInterval;
+                        
+                        *stop = YES;
+                    }
+                }];
+            }
+            
+        }else{
+           
+            UIButton * sender = [self getButton];
+            if ([sender isKindOfClass:[UIButton class]]) {
+                sender.br_controllAcceptEventInterval = br_barItemAcceptEventInterval;
+
+            }
+        }
+       
+    }
     
 }
+
+
 
 
 -(br_ItemSetSelectedBlock)selectedBlcok
@@ -60,14 +94,18 @@ static const char *BarItem_unSelectedStatus = "br_ItemSetDefaultSelectedBlock";
     if (unSelectedBlock) {
         UIButton * sender = [self getButton];
         sender.selectedBlcok = unSelectedBlock;
-        
     }
 
 }
 -(UIButton*)getButton
 {
-    UIButton * sender = [[self target] valueForKey:@"button"]; //获取 按钮
-    sender = nil;
+    /*!
+     *  @brief (lldb) po [self valueForKey:@"_view"]
+     <UINavigationButton: 0x7f8673c13c10; frame = (280 7; 32 30); opaque = NO; layer = <CALayer: 0x7f8673c141e0>>
+     
+     UINavigationButton 是 私有的 但是 是继承 UIbutton
+     */
+    id  sender = [self valueForKey:@"_view"]; //获取 按钮  UIBarButtonItem
     return sender;
 }
 #pragma mark - 外部api

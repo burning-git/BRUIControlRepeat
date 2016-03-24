@@ -15,7 +15,7 @@
 		665CE2BF1C3F61230093DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665CE2BD1C3F61230093DDAC /* LaunchScreen.storyboard */; };
 		665CE2CC1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 665CE2CB1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m */; };
 		665CE2CF1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 665CE2CE1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png */; };
-		66A471031C410A2600B56B8D /* UIControl+BR_Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A471021C410A2600B56B8D /* UIControl+BR_Repeat.m */; };
+		66FC16C51CA3E4FA00E43A09 /* UIControl+BR_Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FC16C41CA3E4FA00E43A09 /* UIControl+BR_Repeat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,9 @@
 		665CE2CA1C3F61D70093DDAC /* UIBarButtonItem+Repeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Repeat.h"; sourceTree = "<group>"; };
 		665CE2CB1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Repeat.m"; sourceTree = "<group>"; };
 		665CE2CE1C3FAB550093DDAC /* feedBack矢量智能对象@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedBack矢量智能对象@2x.png"; sourceTree = "<group>"; };
-		66A471011C410A2600B56B8D /* UIControl+BR_Repeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+BR_Repeat.h"; sourceTree = "<group>"; };
-		66A471021C410A2600B56B8D /* UIControl+BR_Repeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BR_Repeat.m"; sourceTree = "<group>"; };
+		66FC16C21CA3E12800E43A09 /* BRRepeatDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRepeatDefine.h; sourceTree = "<group>"; };
+		66FC16C31CA3E4FA00E43A09 /* UIControl+BR_Repeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+BR_Repeat.h"; sourceTree = "<group>"; };
+		66FC16C41CA3E4FA00E43A09 /* UIControl+BR_Repeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BR_Repeat.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +93,11 @@
 		665CE2C61C3F61650093DDAC /* Catory */ = {
 			isa = PBXGroup;
 			children = (
-				66A471011C410A2600B56B8D /* UIControl+BR_Repeat.h */,
-				66A471021C410A2600B56B8D /* UIControl+BR_Repeat.m */,
+				66FC16C31CA3E4FA00E43A09 /* UIControl+BR_Repeat.h */,
+				66FC16C41CA3E4FA00E43A09 /* UIControl+BR_Repeat.m */,
 				665CE2CA1C3F61D70093DDAC /* UIBarButtonItem+Repeat.h */,
 				665CE2CB1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m */,
+				66FC16C21CA3E12800E43A09 /* BRRepeatDefine.h */,
 			);
 			path = Catory;
 			sourceTree = "<group>";
@@ -172,8 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				665CE2B71C3F61230093DDAC /* ViewController.m in Sources */,
+				66FC16C51CA3E4FA00E43A09 /* UIControl+BR_Repeat.m in Sources */,
 				665CE2B41C3F61230093DDAC /* AppDelegate.m in Sources */,
-				66A471031C410A2600B56B8D /* UIControl+BR_Repeat.m in Sources */,
 				665CE2CC1C3F61D70093DDAC /* UIBarButtonItem+Repeat.m in Sources */,
 				665CE2B11C3F61230093DDAC /* main.m in Sources */,
 			);

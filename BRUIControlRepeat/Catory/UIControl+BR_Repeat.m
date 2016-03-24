@@ -28,13 +28,7 @@ static const char *UIControl_unSelectedStatus = "UIControl_unSelectedStatus";
     Method b = class_getInstanceMethod(self, @selector(br_sendAction:to:forEvent:));
     method_exchangeImplementations(a, b);
     
-    
-//    Method c  = class_getInstanceMethod(self, @selector(addTarget:action:forControlEvents:));
-//    Method d = class_getInstanceMethod(self, @selector(br_addTarget:action:forControlEvents:));
-//    method_exchangeImplementations(c, d);
-    
 }
-
 
 
 #pragma mark - 设置默认 间隔时间
