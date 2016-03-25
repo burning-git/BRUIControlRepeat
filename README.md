@@ -10,3 +10,5 @@
 1.如果是 UIButton，导入 #import "UIBarButtonItem+Repeat.h"  并且设置  br_controllAcceptEventInterval 间隔时间
 
 2: 设置全局默认 间隔时间 +(void)setDefualtInterval:(NSTimeInterval)interval;
+
+3: pod 'BRUIRepeat', '~> 1.0.2' pod 引入
