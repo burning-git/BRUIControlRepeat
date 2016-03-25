@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#define BRRepeatWeak(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 typedef void(^br_SetSelectedBlock)(id sender);
 typedef void(^br_SetDefaultSelectedBlock)(id sender);

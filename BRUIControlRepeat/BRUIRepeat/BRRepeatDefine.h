@@ -10,6 +10,8 @@
 #define BRRepeatDefine_h
 
 #define BRRepeatWeak(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define BRDefineSetRepeatInterval(time) [UIControl setDefualtInterval:time];
 #import "UIBarButtonItem+Repeat.h"
 #import "UIControl+BR_Repeat.h"
 #endif /* BRRepeatDefine_h */

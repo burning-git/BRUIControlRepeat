@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BRUIRepeat"
-  s.version      = "0.9"
+  s.version      = "1.0.2"
   s.summary      = "A short description of BRUIRepeat."
 
   # This description is used to generate tags and improve search results.
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                   Buttton can't repeat selected
                    DESC
 
   s.homepage     = "https://github.com/burning-git"
@@ -63,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+   s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/burning-git/BRUIControlRepeat.git", :tag => "0.9" }
+  s.source       = { :git => "https://github.com/burning-git/BRUIControlRepeat.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "BRUIRepeat/*"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "BRUIControlRepeat", "BRUIRepeat/**/*.{h,m}"
+  s.exclude_files = "BRUIControlRepeat"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   s.frameworks = "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -129,7 +130,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

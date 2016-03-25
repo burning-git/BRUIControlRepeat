@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Burning_git";
-    [UIControl setDefualtInterval:10]; //总开关， 所有的 设置 为 10s
+    BRDefineSetRepeatInterval(10);
+ //   [UIControl setDefualtInterval:10]; //总开关， 所有的 设置 为 10s
    // self.button.br_controllAcceptEventInterval = 10;
     BRRepeatWeak(ws);
 
@@ -40,7 +41,7 @@
     self.navigationItem.rightBarButtonItem = bar;
     bar.br_barItemAcceptEventInterval = 5;
 
-//    UIBarButtonItem *bar = [[UIBarButtonItem alloc] initWithCustomView:[self addRightItemWithImage:@"feedBack矢量智能对象" action:@selector(sleedsjasdakdjad:)]];
+//    UIBarButtonItem *bar = [[UIBarButtonItem alloc] initWithCustomView:[self addRightItemWithImage:@"rightItem" action:@selector(sleedsjasdakdjad:)]];
 //     self.navigationItem.rightBarButtonItem = bar;
 //    
 //    bar.br_barItemAcceptEventInterval = 5;
