@@ -7,8 +7,10 @@
 
 ###使用方法
 
-1.如果是 UIButton，导入 #import "UIBarButtonItem+Repeat.h"  并且设置  br_controllAcceptEventInterval 间隔时间
+1: 如果是 UIButton          设置br_controllAcceptEventInterval 间隔时间
 
-2: 设置全局默认 间隔时间 +(void)setDefualtInterval:(NSTimeInterval)interval;
+2: 如果是 UIBarButtonItem   设置br_barItemAcceptEventInterval  间隔时间
 
-3: pod 'BRUIRepeat', '~> 1.0.2' pod 引入
+3: 设置全局默认 间隔时间 +(void)setDefualtInterval:(NSTimeInterval)interval;
+
+4: pod 'BRUIRepeat', '~> 1.0.2' pod 引入
